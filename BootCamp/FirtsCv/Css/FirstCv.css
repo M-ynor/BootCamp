@@ -1,0 +1,109 @@
+/**************************************Tag Styles*****************************************************************************/
+
+body{
+    margin: 0;
+    background-color: #AAC4FF;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/**************************************Id Styles*****************************************************************************/
+
+#mountain{
+    display: inline-block;
+    width: 850px;
+    height: 540px;
+    position: relative;
+    left: 150px;
+}
+#cloud1{
+    position: relative;
+    top: 300px;
+    left: 150px;
+    height: 60px;
+}
+#cloud2{
+    position: relative;
+    bottom: 525px;
+    left: 1100px;
+    height: 60px;
+}
+#icon{
+    padding-left: 4px;
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/**************************************Classes Styles*****************************************************************************/
+.top-container{
+    background-color: #AAC4FF;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+
+.home-text{
+    position:relative;
+    font-size:350%;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    line-height: 8px;
+    color: #FFF89A;
+    top: 100px;
+}
+.home-text2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.nav{
+    margin-top: 0;
+    font-size: larger;
+    height:60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: hsl(0, 0, 100%,0.1);
+    backdrop-filter: blur(0.20rem);
+    
+}
+    .nav ul{
+        display: flex;
+        position: relative;
+        width: fit-content;
+        left: 1140px;
+        bottom: 87px;
+        list-style: none;
+        overflow: hidden;
+        
+    }
+        .nav ul li{
+            float: left;
+        } 
+            .nav ul li a{
+                display: inline-block;
+                padding: 20px;
+                text-decoration: none;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #80558C;
+                height: 23px;
+            }
+                .nav ul li a:hover{
+                    background-color: #FFF89A;
+                }
+
+/**************************************Responsive Styles*****************************************************************************/
+
+@media(max-width: 35rem){
+    .nav{
+        position: fixed;
+        inset: 0% 0% 0% 20%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem ;
+    }
+}
